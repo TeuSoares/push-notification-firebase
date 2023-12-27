@@ -150,3 +150,4 @@
 172.30.0.1 - - [27/Dec/2023:10:02:31 -0300] "POST /api/send-notification HTTP/1.1" 200 103 "-" "PostmanRuntime/7.36.0" "-"
 172.30.0.1 - - [27/Dec/2023:10:51:19 -0300] "POST /api/send-notification HTTP/1.1" 200 103 "-" "PostmanRuntime/7.36.0" "-"
 172.30.0.1 - - [27/Dec/2023:11:06:56 -0300] "POST /api/send-notification HTTP/1.1" 200 103 "-" "PostmanRuntime/7.36.0" "-"
+172.30.0.1 - - [27/Dec/2023:11:09:40 -0300] "POST /api/send-notification HTTP/1.1" 200 103 "-" "PostmanRuntime/7.36.0" "-"

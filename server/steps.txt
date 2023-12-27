@@ -7,3 +7,4 @@ OBS: Cada App possui configurações diferentes. Conferir a documentação.
 // BACK-END:
 1 - Gerar a chave privada da conta de serviço. (Arquivo JSON)
 2 - Adicionar no .env o caminho do arquivo JSON que contém as credenciais e o client token do App.
+3 - Adicionar na url de envio o id do projeto.
