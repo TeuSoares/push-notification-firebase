@@ -1,0 +1,121 @@
+2023/12/26 14:21:10 [notice] 1#1: using the "epoll" event method
+2023/12/26 14:21:10 [notice] 1#1: nginx/1.20.0
+2023/12/26 14:21:10 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2023/12/26 14:21:10 [notice] 1#1: OS: Linux 6.2.0-39-generic
+2023/12/26 14:21:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2023/12/26 14:21:10 [notice] 1#1: start worker processes
+2023/12/26 14:21:10 [notice] 1#1: start worker process 31
+2023/12/26 14:21:10 [notice] 1#1: start worker process 32
+2023/12/26 14:21:10 [notice] 1#1: start worker process 33
+2023/12/26 14:21:10 [notice] 1#1: start worker process 34
+2023/12/26 14:33:56 [warn] 31#31: *25 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 14:51:02 [warn] 31#31: *39 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/00/0000000002 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 15:02:08 [warn] 31#31: *43 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/3/00/0000000003 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 15:13:55 [warn] 34#34: *46 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/4/00/0000000004 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 15:14:00 [warn] 34#34: *46 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/5/00/0000000005 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 15:23:26 [warn] 34#34: *50 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/6/00/0000000006 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 16:20:43 [warn] 31#31: *82 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/7/00/0000000007 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 16:26:07 [warn] 31#31: *86 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/8/00/0000000008 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 16:27:08 [warn] 31#31: *86 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/9/00/0000000009 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 16:39:32 [warn] 31#31: *93 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/0/01/0000000010 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 16:39:43 [warn] 31#31: *93 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/01/0000000011 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 16:52:59 [warn] 34#34: *104 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/01/0000000012 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 16:53:40 [warn] 34#34: *104 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/3/01/0000000013 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 16:56:24 [warn] 31#31: *109 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/4/01/0000000014 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 16:58:10 [warn] 34#34: *114 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/5/01/0000000015 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 17:13:37 [warn] 31#31: *119 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/6/01/0000000016 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 17:15:26 [warn] 31#31: *124 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/7/01/0000000017 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 17:16:51 [warn] 31#31: *127 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/8/01/0000000018 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 17:26:54 [warn] 31#31: *142 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/9/01/0000000019 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 17:36:17 [warn] 31#31: *149 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/0/02/0000000020 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 17:36:45 [warn] 31#31: *149 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/02/0000000021 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 17:41:09 [warn] 31#31: *164 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/02/0000000022 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/26 17:44:38 [notice] 1#1: using the "epoll" event method
+2023/12/26 17:44:38 [notice] 1#1: nginx/1.20.0
+2023/12/26 17:44:38 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2023/12/26 17:44:38 [notice] 1#1: OS: Linux 6.2.0-39-generic
+2023/12/26 17:44:38 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/12/26 17:44:38 [notice] 1#1: start worker processes
+2023/12/26 17:44:38 [notice] 1#1: start worker process 31
+2023/12/26 17:44:38 [notice] 1#1: start worker process 32
+2023/12/26 17:44:38 [notice] 1#1: start worker process 33
+2023/12/26 17:44:38 [notice] 1#1: start worker process 34
+2023/12/26 17:44:45 [warn] 31#31: *1 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.28.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2023/12/26 17:59:08 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/12/26 17:59:08 [notice] 33#33: gracefully shutting down
+2023/12/26 17:59:08 [notice] 33#33: exiting
+2023/12/26 17:59:08 [notice] 31#31: gracefully shutting down
+2023/12/26 17:59:08 [notice] 33#33: exit
+2023/12/26 17:59:08 [notice] 31#31: exiting
+2023/12/26 17:59:08 [notice] 31#31: exit
+2023/12/26 17:59:08 [notice] 34#34: gracefully shutting down
+2023/12/26 17:59:08 [notice] 34#34: exiting
+2023/12/26 17:59:08 [notice] 34#34: exit
+2023/12/26 17:59:08 [notice] 32#32: gracefully shutting down
+2023/12/26 17:59:08 [notice] 32#32: exiting
+2023/12/26 17:59:08 [notice] 32#32: exit
+2023/12/26 17:59:08 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/12/26 17:59:08 [notice] 1#1: worker process 33 exited with code 0
+2023/12/26 17:59:08 [notice] 1#1: signal 29 (SIGIO) received
+2023/12/26 17:59:08 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/12/26 17:59:08 [notice] 1#1: worker process 34 exited with code 0
+2023/12/26 17:59:08 [notice] 1#1: signal 29 (SIGIO) received
+2023/12/26 17:59:08 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/12/26 17:59:08 [notice] 1#1: worker process 31 exited with code 0
+2023/12/26 17:59:08 [notice] 1#1: signal 29 (SIGIO) received
+2023/12/26 17:59:08 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/12/26 17:59:08 [notice] 1#1: worker process 32 exited with code 0
+2023/12/26 17:59:08 [notice] 1#1: exit
+2023/12/26 17:59:31 [notice] 34#34: signal 15 (SIGTERM) received, exiting
+2023/12/26 17:59:31 [notice] 34#34: exiting
+2023/12/26 17:59:31 [notice] 34#34: exit
+2023/12/26 17:59:31 [notice] 32#32: signal 15 (SIGTERM) received, exiting
+2023/12/26 17:59:31 [notice] 33#33: signal 15 (SIGTERM) received, exiting
+2023/12/26 17:59:31 [notice] 32#32: exiting
+2023/12/26 17:59:31 [notice] 33#33: exiting
+2023/12/26 17:59:31 [notice] 32#32: exit
+2023/12/26 17:59:31 [notice] 33#33: exit
+2023/12/26 17:59:31 [notice] 31#31: signal 15 (SIGTERM) received, exiting
+2023/12/26 17:59:31 [notice] 31#31: exiting
+2023/12/26 17:59:31 [notice] 31#31: exit
+2023/12/26 17:59:31 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2023/12/26 17:59:31 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/12/26 17:59:31 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/12/26 17:59:31 [notice] 1#1: signal 14 (SIGALRM) received
+2023/12/26 17:59:31 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/12/26 17:59:31 [notice] 1#1: worker process 32 exited with code 0
+2023/12/26 17:59:31 [notice] 1#1: worker process 34 exited with code 0
+2023/12/26 17:59:31 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/12/26 17:59:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/12/26 17:59:31 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/12/26 17:59:31 [notice] 1#1: worker process 33 exited with code 0
+2023/12/26 17:59:31 [notice] 1#1: worker process 31 exited with code 0
+2023/12/26 17:59:31 [notice] 1#1: exit
+2023/12/27 08:02:03 [notice] 1#1: using the "epoll" event method
+2023/12/27 08:02:03 [notice] 1#1: nginx/1.20.0
+2023/12/27 08:02:03 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2023/12/27 08:02:03 [notice] 1#1: OS: Linux 6.2.0-39-generic
+2023/12/27 08:02:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/12/27 08:02:03 [notice] 1#1: start worker processes
+2023/12/27 08:02:03 [notice] 1#1: start worker process 30
+2023/12/27 08:02:03 [notice] 1#1: start worker process 31
+2023/12/27 08:02:03 [notice] 1#1: start worker process 32
+2023/12/27 08:02:03 [notice] 1#1: start worker process 33
+2023/12/27 08:20:24 [notice] 1#1: using the "epoll" event method
+2023/12/27 08:20:24 [notice] 1#1: nginx/1.20.0
+2023/12/27 08:20:24 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2023/12/27 08:20:24 [notice] 1#1: OS: Linux 6.2.0-39-generic
+2023/12/27 08:20:24 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2023/12/27 08:20:24 [notice] 1#1: start worker processes
+2023/12/27 08:20:24 [notice] 1#1: start worker process 31
+2023/12/27 08:20:24 [notice] 1#1: start worker process 32
+2023/12/27 08:20:24 [notice] 1#1: start worker process 33
+2023/12/27 08:20:24 [notice] 1#1: start worker process 34
+2023/12/27 08:20:29 [warn] 32#32: *2 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/27 08:27:57 [warn] 34#34: *5 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/00/0000000002 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/27 08:32:53 [warn] 34#34: *11 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/3/00/0000000003 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/27 08:42:12 [warn] 34#34: *15 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/4/00/0000000004 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/27 08:53:25 [warn] 34#34: *23 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/5/00/0000000005 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/27 08:59:16 [warn] 34#34: *29 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/6/00/0000000006 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/27 09:08:02 [warn] 34#34: *34 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/7/00/0000000007 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"
+2023/12/27 10:01:31 [warn] 32#32: *88 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/8/00/0000000008 while reading upstream, client: 172.30.0.1, server: back_default.test, request: "POST /api/send-notification HTTP/1.1", upstream: "fastcgi://172.30.0.2:9000", host: "localhost"

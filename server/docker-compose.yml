@@ -1,0 +1,53 @@
+version: "3.8"
+
+networks:
+  project_firebase:
+    name: project_firebase
+
+services:
+  nginx:
+    image: crmsolucoes/nginx-stable-alpine:latest
+    container_name: project_firebase_nginx
+    hostname: project_firebase_nginx
+    restart: unless-stopped
+    depends_on:
+      - php
+    ports:
+      - 80:80
+    volumes:
+      - ./:/var/www/html
+      - ./nginx/log:/var/log/nginx
+      - ./nginx/conf/default.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - project_firebase
+
+  php:
+    image: crmsolucoes/php-fpm-8.2:latest
+    container_name: project_firebase_php
+    hostname: project_firebase_php
+    restart: unless-stopped
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - project_firebase
+
+  composer:
+    image: composer:latest
+    container_name: project_firebase_composer
+    hostname: project_firebase_composer
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    networks:
+      - project_firebase
+
+  artisan:
+    image: crmsolucoes/php-fpm-8.2:latest
+    container_name: project_firebase_artisan
+    hostname: project_firebase_artisan
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: ["php", "artisan"]
+    networks:
+      - project_firebase
