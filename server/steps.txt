@@ -1,10 +1,9 @@
 // FRONT-END:
 1 - Criar projeto no Firebase e adicionar um App.
 2 - Gerar o certificado Web Push.
-3 - Fazer a configuração do Firebase no projeto e gerar o client token daquele App. (Chave única)
-OBS: Cada App possui configurações diferentes. Conferir a documentação.
+3 - Fazer a configuração do Firebase no projeto e geração de chave única para os dispositivos e receber as notificações.
 
 // BACK-END:
 1 - Gerar a chave privada da conta de serviço. (Arquivo JSON)
-2 - Adicionar no .env o caminho do arquivo JSON que contém as credenciais e o client token do App.
+2 - Adicionar no .env o caminho do arquivo JSON que contém as credenciais.
 3 - Adicionar na url de envio o id do projeto.
