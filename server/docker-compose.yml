@@ -51,3 +51,35 @@ services:
     entrypoint: ["php", "artisan"]
     networks:
       - project_firebase
+
+  mysql:
+    image: 'mysql/mysql-server:8.0'
+    restart: unless-stopped
+    container_name: project_firebase_mysql
+    ports:
+      - '${DB_PORT}:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_DATABASE: '${DB_DATABASE}'
+      MYSQL_USER: '${DB_USERNAME}'
+      MYSQL_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+    volumes:
+      - ./mysql:/var/lib/mysql
+    networks:
+      - project_firebase
+    
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: unless-stopped
+    container_name: project_firebase_phpmyadmin
+    depends_on:
+      - mysql
+    ports:
+      - "8081:80"
+    environment:
+        PMA_HOST: mysql
+        MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+    networks:
+      - project_firebase
